@@ -55,6 +55,22 @@
 
 ## 📷 スクリーンショット
 
+以下はシステムのスクリーンショットです：
+
+### **会員側の予約画面**
+![予約画面](images/screenshot/1.png)
+
+### **予約履歴の確認**
+![予約履歴](images/screenshot/2.png)
+
+### **シフト管理画面**
+![シフト管理](images/screenshot/3.png)
+
+### **コース管理画面**
+![コース管理](images/screenshot/4.png)
+
+### **トレーナー情報管理**
+![トレーナー管理](images/screenshot/5.png)
 
 ---
 
