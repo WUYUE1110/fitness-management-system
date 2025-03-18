@@ -79,9 +79,6 @@
 #### **スケジュール管理画面**
 ![管理者 - シフト管理画面](src/main/webapp/images/screenshot/9.png)
 
-#### **コース管理画面**
-![管理者ダッシュボード](src/main/webapp/images/screenshot/13.png)
-
 #### **コースカテゴリ管理画面**
 ![管理者 - コース管理画面](src/main/webapp/images/screenshot/14.png)
 
