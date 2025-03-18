@@ -46,8 +46,8 @@
 ### **開発環境**
 | 環境 | バージョン |
 |------|------|
-| Java | 8 以上 |
-| サーバー | Apache Tomcat 9 以上 |
+| Java | 9 以上 |
+| サーバー | Apache Tomcat 10 以上 |
 | データベース | MySQL 5.7 以上 |
 | 開発ツール | IntelliJ IDEA / Eclipse |
 
