@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+    version="4.0">
+
+    <welcome-file-list>
+        <!-- <welcome-file>admin/admin/login.jsp</welcome-file> -->
+        <welcome-file>member/index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- 添加静态资源映射 -->
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/images/*</url-pattern>
+    </servlet-mapping>
+
+    <!-- 文件上传的Servlet映射 -->
+    <servlet>
+        <servlet-name>ImageUploadServlet</servlet-name>
+        <servlet-class>com.work.reservationsystem.servlet.ImageUploadServlet</servlet-class>
+        <!-- 添加多部分配置 -->
+        <multipart-config>
+            <max-file-size>10485760</max-file-size> <!-- 10MB -->
+            <max-request-size>20971520</max-request-size> <!-- 20MB -->
+            <file-size-threshold>2097152</file-size-threshold> <!-- 2MB -->
+        </multipart-config>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ImageUploadServlet</servlet-name>
+        <url-pattern>/upload/image</url-pattern>
+    </servlet-mapping>
+
+    <!-- 字符编码过滤器 -->
+    <filter>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <!-- 添加CSS文件映射 -->
+	<servlet-mapping>
+    	<servlet-name>default</servlet-name>
+    	<url-pattern>*.css</url-pattern>
+	</servlet-mapping>
+
+	<!-- 添加JavaScript文件映射 -->
+	<servlet-mapping>
+    	<servlet-name>default</servlet-name>
+    	<url-pattern>*.js</url-pattern>
+	</servlet-mapping>
+
+	<!-- 添加libs目录映射 -->
+	<servlet-mapping>
+    	<servlet-name>default</servlet-name>
+    	<url-pattern>/libs/*</url-pattern>
+	</servlet-mapping>
+
+	<!-- 添加favicon图标映射 -->
+	<servlet-mapping>
+	    <servlet-name>default</servlet-name>
+	    <url-pattern>*.ico</url-pattern>
+	</servlet-mapping>
+
+</web-app>
