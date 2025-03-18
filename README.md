@@ -58,7 +58,7 @@
 以下はシステムのスクリーンショットです：
 
 ### **会員側の予約画面**
-![予約画面](images/screenshot/1.png)
+![予約画面](webapp/images/screenshot/1.png)
 
 ### **予約履歴の確認**
 ![予約履歴](images/screenshot/2.png)
